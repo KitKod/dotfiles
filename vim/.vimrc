@@ -147,17 +147,20 @@ endif
 " Hide some panels
 "set guioptions-=m  " remove menu bar
 set guioptions-=T   " remove toolbar
-"set guioptions-=r  " remove right-hand scroll bar
+set guioptions-=r  " remove right-hand scroll bar
 
 " Tab Settings
 set smarttab
 set tabstop=4
 
+"игноррируемые файлы с расширениями
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$', '\.class$', 'pip-log\.txt$', '\.o$']
+
 " Highlight characters past column 100
 augroup vimrc_autocmds
     autocmd!
     autocmd FileType ruby,python,javascript,c,cpp highlight Excess ctermbg=DarkGrey guibg=#c12a0f
-    autocmd FileType ruby,python,javascript,c,cpp match Excess /\%100v.*/
+    autocmd FileType ruby,python,javascript,c,cpp match Excess /\%80v.*/
     autocmd FileType ruby,python,javascript,c,cpp set nowrap
 augroup END
 
