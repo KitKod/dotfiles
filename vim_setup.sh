@@ -7,5 +7,5 @@ ln -s ~/Downloads/dotfiles/vim/.vimrc ~/.vimrc
 
 # setup root user
 mkdir /root/.vim/ > /dev/null 2>&1
-cp -r ~/Downloads/dotfiles/vim/* /root/.vim/
-sudo ln -s ~/Downloads/dotfiles/vim/.vimrc /root/.vimrc
+cp -r ~/.vim/* /root/.vim/
+sudo ln -s ~/.vimrc /root/.vimrc
