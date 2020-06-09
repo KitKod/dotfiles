@@ -31,7 +31,7 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 4) Clone my repository somewhere and copy settings:
 ```bash
-git clone https://github.com/Relrin/dotfiles.git ~/Downloads/dotfiles/
+git clone https://github.com/KitKod/dotfiles.git ~/Downloads/dotfiles/
 cp -r ~/Downloads/dotfiles/vim/* ~/.vim/
 mv ~/Downloads/dotfiles/vim/.vimrc ~/
 ```
